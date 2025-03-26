@@ -19,6 +19,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
+				sans: ['Clash Display', 'sans-serif'],
 				dotted: ['Dotsalfn', 'sans-serif'],
 			},
 			colors: {

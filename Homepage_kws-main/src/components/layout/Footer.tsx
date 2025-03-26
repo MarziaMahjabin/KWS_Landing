@@ -5,7 +5,10 @@ const Footer: React.FC = () => {
   return (
     <footer className="z-10 w-full bg-[#050C2E] text-white">
       {/* Main call to action section */}
-      <div className="flex flex-col items-center py-20 px-4 text-center">
+      <div 
+        className="flex flex-col items-center justify-center py-20 px-4 text-center bg-no-repeat bg-cover bg-center min-h-[643px]" 
+        style={{ backgroundImage: 'url("/bg_Footer.png")' }}
+      >
         <h2 className="text-[45px] font-bold leading-tight max-w-[800px] mx-auto">
           Have project in mind? let's make it happen.
         </h2>
