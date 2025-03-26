@@ -8,11 +8,11 @@ import Services from "@/components/home/Services";
 import FeaturedWork from "@/components/home/FeaturedWork";
 import ProjectCalculator from "@/components/home/ProjectCalculator";
 import Contact from "@/components/home/Contact";
-import Footer from "@/components/home/Footer";
+import Footer from "@/components/layout/Footer";
 
 const Index: React.FC = () => {
   return (
-    <div className="bg-[rgba(5,13,54,1)] overflow-hidden pt-[7px] pb-[477px] max-md:pb-[100px]">
+    <div className="bg-[rgba(5,13,54,1)] overflow-hidden pt-[7px]">
       <Hero />
       <div className="relative">
         <Banner />
