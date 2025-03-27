@@ -12,21 +12,21 @@ import Footer from "@/components/home/Footer";
 
 const Index: React.FC = () => {
   return (
-    <div className="bg-[rgba(5,13,54,1)] overflow-hidden pt-[7px] pb-[477px] max-md:pb-[100px]">
+    <div className="bg-[rgba(5,13,54,1)] overflow-hidden pt-[7px]">
       <Hero />
       <div className="relative">
-        <Banner />
-        <div className="flex w-full flex-col items-stretch mt-[170px] pl-[62px] max-md:max-w-full max-md:mt-10 max-md:pl-5">
+
+        <div className="flex w-full flex-col items-stretch mt-[180px]  max-md:mt-14">
           <Partners />
           <About />
           <StartupSupport />
         </div>
       </div>
-      <div className="flex w-full flex-col items-center mt-[132px] pl-7 max-md:max-w-full max-md:mt-10 max-md:pl-5">
+      {/* pl-7 max-md:max-w-full max-md:mt-10 max-md:pl-5 */}
+      <div className="flex w-full flex-col items-center md:mt-[132px]">
         <Services />
         <FeaturedWork />
         <ProjectCalculator />
-        <Contact />
       </div>
       <Footer />
     </div>

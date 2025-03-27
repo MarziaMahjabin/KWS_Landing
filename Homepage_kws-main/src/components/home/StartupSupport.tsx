@@ -34,12 +34,12 @@ const StartupSupport: React.FC = () => {
   };
 
   return (
-    <section className="w-full flex flex-col items-start">
-      <div className="w-full max-w-[1175px] text-white mt-[102px] max-md:max-w-full max-md:mt-10">
-        <h2 className="text-[40px] font-semibold leading-none max-md:max-w-full">
+    <section className="w-full flex flex-col items-start px-2 md:px-5 lg:px-10 py-3">
+      <div className="w-full  text-white ">
+        <h2 className="text-[25px] lg:text-[48px] text-center lg:text-start font-semibold leading-relaxed lg:leading-none ">
           Launch Your Dream Startup with Our Full-Cycle Support
         </h2>
-        <p className="text-[23px] font-medium leading-[35px] mt-[21px] max-md:max-w-full">
+        <p className="text-[17px] lg:text-[23px] text-center lg:text-start leading-[35px] mt-[21px] l">
           Whether you're a first-time CEO or scaling your next big idea, we
           offer comprehensive startup development services. From planning and
           budgeting to building an MVP and bringing it to market, we handle

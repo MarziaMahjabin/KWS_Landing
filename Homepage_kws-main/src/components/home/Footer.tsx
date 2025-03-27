@@ -4,13 +4,13 @@ const Footer: React.FC = () => {
   return (
     <footer className="z-10 w-full bg-[#050C2E] text-white">
       {/* Main call to action section */}
-      <div className="flex flex-col items-center py-20 px-4 text-center">
-        <h2 className="text-[45px] font-bold leading-tight max-w-[800px] mx-auto">
+      <div className="flex flex-col items-center pt-20 lg:pt-20 pb-5 md:pb-10 px-4 text-center">
+        <h2 className="text-[25px] lg:text-[48px]  font-bold leading-tight max-w-[800px] mx-auto">
           Have project in mind? let's make it happen.
         </h2>
         <a 
           href="#" 
-          className="mt-8 bg-[#913BFF] hover:bg-[#7B32D9] transition-colors duration-300 text-white font-medium px-8 py-3 rounded-md"
+          className="mt-8 capitalize bg-[#913BFF] hover:bg-[#7B32D9] transition-colors duration-300 text-white font-medium px-8 py-3 rounded-md"
         >
           contact us
         </a>
@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
       <div className="border-t border-[#272B45] w-full max-w-[1200px] mx-auto"></div>
 
       {/* Footer content with three columns */}
-      <div className="py-16 px-8 max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div className="py-10 lg:py-16 px-5 lg:px-8 max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Left column - Help text and Let's Chat */}
         <div className="flex flex-col">
           <p className="text-[15px] leading-[23px] font-medium">
@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
       {/* Copyright section */}
       <div className="border-t border-[#272B45] py-6">
         <div className="max-w-[1200px] mx-auto px-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-[14px] text-gray-400 mb-4 md:mb-0">
+          <p className="text-[14px] text-gray-400 mb-4 md:mb-0 text-center md:text-start">
             © 2022, Kws Technology. All Rights Reserved.
           </p>
           <div className="flex space-x-4">

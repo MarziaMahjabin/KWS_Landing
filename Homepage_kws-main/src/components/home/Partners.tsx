@@ -44,7 +44,7 @@ const Partners: React.FC = () => {
   }, []);
   
   return (
-    <section className="self-center w-full max-w-[1162px] overflow-hidden ml-[15px] max-md:max-w-full">
+    <section className="self-center w-full lg:pt-10 2xl:pt-20 overflow-hidden">
       <div 
         ref={sliderRef} 
         className="flex items-center gap-10 whitespace-nowrap"

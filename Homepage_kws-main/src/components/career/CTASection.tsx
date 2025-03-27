@@ -2,8 +2,8 @@ import React from "react";
 
 const CTASection: React.FC = () => {
   return (
-    <div className="relative bg-[#0B174B] mt-[100px] px-0 py-[100px] border-[0.4px] border-solid border-white max-md:mt-[50px]">
-      <div className="bg-[pattern-2] relative h-[643px]">
+    <div className="bg-[url('https://i.ibb.co.com/0yjFptW9/Frame-432.png')] border-b-2 border-t-2 border-[#888787] bg-center bg-[#0b174b] py-20 lg:py-40 w-full bg-no-repeat  relative  lg:mt-[10px] px-0  ">
+      {/* <div className="bg-[pattern-2] relative h-[643px]">
         <img
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/19134fce536c530ce94a32aa596eca1e96c3bba5"
           alt=""
@@ -39,12 +39,12 @@ const CTASection: React.FC = () => {
           alt=""
           className="absolute"
         />
-      </div>
-      <div className="absolute -translate-x-2/4 -translate-y-2/4 text-center left-2/4 top-2/4">
-        <h2 className="text-[#F9F9F9] text-6xl font-bold max-w-[898px] mb-[34px] max-sm:text-4xl">
+      </div> */}
+      <div className="flex flex-col justify-center items-center">
+        <h2 className="capitalize text-[#F9F9F9] text-2xl text-center lg:text-4xl font-bold  mb-[34px] px-3">
           have project in mind? let's make it happen.
         </h2>
-        <button className="text-[#F9F9F9] text-lg cursor-pointer bg-[#913BFF] px-[30px] py-[18px] rounded-md">
+        <button className="text-[#F9F9F9] text-lg cursor-pointer bg-[#913BFF] capitalize px-4 py-2 lg:px-[30px] lg:py-[18px] rounded-md">
           contact us
         </button>
       </div>

@@ -99,13 +99,13 @@ const Services: React.FC = () => {
   };
 
   return (
-    <section className="w-full flex flex-col items-center pt-16 pb-20">
+    <section className="w-full flex flex-col items-center md:pt-10 lg:px-8">
       <div className="w-full max-w-7xl px-4">
         <div className="mb-12">
-          <h2 className="text-4xl font-bold text-white mb-4">
+          <h2 className="text-[25px] lg:text-[48px] text-center lg:text-start font-semibold text-white mb-4">
             Featured Services
           </h2>
-          <p className="text-xl text-white font-medium leading-relaxed max-w-3xl">
+          <p className="text-white text-[17px] lg:text-[23px] text-center lg:text-start">
             Dramatically supply transparent backward deliverables before caward comp internal or "organic" sources.
           </p>
         </div>
@@ -117,7 +117,7 @@ const Services: React.FC = () => {
               <div 
                 key={index} 
                 className={`
-                  relative bg-[#0a0e35] border border-[#595F80] border-[0.5px] rounded-md p-6 
+                  relative bg-[#0a0e35] border border-[#595F80] border-[0.5px] rounded-md p-2 md:p-4 
                   transition-all duration-300 ease-in-out cursor-pointer
                   group hover:bg-[rgba(145,59,255,0.9)] hover:border-[rgba(145,59,255,1)]
                   ${index === 0 ? 'bg-[rgba(145,59,255,1)] border-[rgba(145,59,255,1)]' : ''}
@@ -149,7 +149,7 @@ const Services: React.FC = () => {
             ))
           ) : (
             // Detailed view when a service is selected
-            <div className="lg:col-span-3 flex flex-col md:flex-row gap-6 transition-all duration-500 ease-in-out">
+            <div className=" lg:col-span-3 flex flex-col md:flex-row gap-6 transition-all duration-500 ease-in-out">
               {/* Selected service card on the left */}
               <div 
                 className="w-full md:w-1/3 bg-[rgba(145,59,255,1)] border border-[rgba(145,59,255,1)] rounded-md p-6 cursor-pointer"

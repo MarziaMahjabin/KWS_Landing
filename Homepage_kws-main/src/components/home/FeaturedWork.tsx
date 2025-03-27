@@ -37,19 +37,22 @@ const FeaturedWork: React.FC = () => {
   };
 
   return (
-    <section className="w-full flex flex-col items-center bg-[#0B0F2F]">
-      <div className="flex w-full max-w-[1294px] items-stretch gap-5 flex-wrap justify-between mt-[132px] max-md:max-w-full max-md:mt-10">
-        <div className="text-white max-md:max-w-full">
-          <h2 className="text-[40px] font-semibold leading-none max-md:max-w-full">
-            featured work
+    <section className="w-full flex flex-col items-center bg-[#0B0F2F] pt-10 px-2 md:px-5 lg:px-10">
+      
+      <div className="flex justify-between items-center">
+        {/* left */}
+        <div className="flex flex-col space-y-3 text-white">
+        <h2 className="text-[25px] lg:text-[48px] text-center md:text-start font-semibold leading-none ">
+            Featured Work
           </h2>
-          <p className="text-[23px] font-medium leading-[35px] mt-[26px] max-md:max-w-full">
+          <p className="md:pr-40 text-[17px] lg:text-[23px] text-center md:text-start leading-[35px] mt-[26px] ">
             Explore our groundbreaking projects that push boundaries and
             redefine innovation.
             <br />
           </p>
         </div>
-        <div className="flex items-center gap-[15px] mt-[21px]">
+{/* right */}
+<div className="md:flex items-center gap-[15px] mt-[21px] hidden ">
           <button
             aria-label="Previous work"
             className="border self-stretch flex min-h-20 items-center gap-2.5 w-20 my-auto px-[34px] py-[29px] border-white border-solid max-md:px-5 hover:bg-[rgba(145,59,255,0.2)] transition-colors"
@@ -71,10 +74,50 @@ const FeaturedWork: React.FC = () => {
             />
           </button>
         </div>
-      </div>
 
-      <div className="w-full max-w-[1367px] mt-[100px] max-md:max-w-full max-md:mt-10">
-        <div className="gap-5 flex transition-all duration-500 ease-in-out max-md:flex-col max-md:items-stretch">
+      </div>
+      
+      
+      
+      
+      
+      {/* <div className="flex w-full max-w-[1294px] items-stretch gap-5 flex-wrap justify-between max-md:max-w-full ">
+        <div className="text-white">
+          <h2 className="text-[25px] lg:text-[48px] text-center lg:text-start font-semibold leading-none ">
+            Featured Work
+          </h2>
+          <p className="text-[17px] lg:text-[23px] text-center lg:text-start leading-[35px] mt-[26px] ">
+            Explore our groundbreaking projects that push boundaries and
+            redefine innovation.
+            <br />
+          </p>
+        </div>
+        <div className="md:flex items-center gap-[15px] mt-[21px] hidden ">
+          <button
+            aria-label="Previous work"
+            className="border self-stretch flex min-h-20 items-center gap-2.5 w-20 my-auto px-[34px] py-[29px] border-white border-solid max-md:px-5 hover:bg-[rgba(145,59,255,0.2)] transition-colors"
+          >
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/23a3c2e3bc6c40d1929e6e069f81541b/bfb5167fa2c2a9d758ed3810a59639d89bde1f6e?placeholderIfAbsent=true"
+              alt="Left arrow"
+              className="aspect-[0.55] object-contain w-3 self-stretch my-auto"
+            />
+          </button>
+          <button
+            aria-label="Next work"
+            className="border self-stretch flex min-h-20 items-center gap-2.5 w-20 my-auto px-[34px] py-[29px] border-white border-solid max-md:px-5 hover:bg-[rgba(145,59,255,0.2)] transition-colors"
+          >
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/23a3c2e3bc6c40d1929e6e069f81541b/4c8a7755dcb44433d6acf16ae8c4744982efa81a?placeholderIfAbsent=true"
+              alt="Right arrow"
+              className="aspect-[0.55] object-contain w-3 self-stretch my-auto"
+            />
+          </button>
+        </div>
+      </div> */}
+
+      <div className="w-full  mt-[10px] ">
+        <div className="gap-5 flex transition-all duration-500 ease-in-out max-md:flex-col">
           {/* Render project cards conditionally based on activeProject state */}
           {projects.map((project, index) => {
             const isActive = activeProject === index;

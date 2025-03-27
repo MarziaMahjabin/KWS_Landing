@@ -2,17 +2,17 @@ import React from "react";
 
 const HeroSection: React.FC = () => {
   return (
-    <div className="flex justify-between relative pt-[120px] pb-0 px-[97px] max-md:flex-col max-md:px-5 max-md:py-[60px] max-sm:px-[15px] max-sm:py-10">
+    <div className="bg-[url('https://i.ibb.co.com/0Vnzn0vh/Frame-1171276022.png')] bg-center w-full  items-center  bg-cover  rounded-xl flex md:justify-center lg:justify-between relative md:pt-20 lg:pt-[20px] xl:pt-[40px] lg:pb-10 px-[97px] max-md:flex-col max-md:px-5 max-md:py-[60px] lg:px-10">
       <div className="flex flex-col gap-[13px]">
-        <h1 className="text-[#F9F9F9] text-[44px] max-sm:text-[32px]">
+        <h1 className="text-[#F9F9F9] font-bold text-[44px] font-bold max-sm:text-[32px] text-center lg:text-start">
           Join our Team
         </h1>
-        <div className="text-lg text-white">
+        <div className="text-lg text-white capitalize md:pb-14 font-semibold">
           <span>Home - project -</span>
           <span className="text-[#913BFF]">join our team</span>
         </div>
       </div>
-      <div className="w-[765px] h-[396px] relative max-md:w-full max-md:h-[300px] max-sm:h-[200px]">
+      <div className="hidden lg:block w-6/12 h-[296px] xl:h-[350px] relative max-md:w-full max-md:h-[300px] max-sm:h-[200px]">
         <div className="bg-[url('https://cdn.builder.io/api/v1/image/assets/TEMP/b1003ae4f94e0198d1efa568d2b9a9122be2360c')] w-full h-full flex items-center justify-center bg-cover bg-center rounded-xl">
           <div>
             <svg

@@ -13,27 +13,31 @@ const ProjectCalculator: React.FC = () => {
   };
 
   return (
-    <section className="w-full flex flex-col items-center">
-      <h2 className="text-[rgba(249,249,249,1)] text-[64px] font-semibold text-center ml-3.5 mt-14 max-md:max-w-full max-md:text-[40px] max-md:mt-10">
+    <section className="w-full flex flex-col items-center lg:px-10">
+      <h2 className="text-[rgba(249,249,249,1)] text-[25px] lg:text-[48px]  font-semibold text-center ml-3.5 mt-14 max-md:max-w-full max-md:text-[40px] max-md:mt-10">
         Estimate Your Project Investment
       </h2>
 
-      <div className="flex w-full max-w-[1169px] items-stretch justify-between text-3xl text-white font-semibold mt-[60px] max-md:max-w-full max-md:mt-10 max-md:flex-col max-md:gap-8">
+      {/* <div className="flex w-full text-[17px] lg:text-[23px] text-center md:text-start max-w-[1169px] items-stretch justify-between text-3xl text-white font-semibold mt-[60px] max-md:max-w-full max-md:mt-10 max-md:flex-col max-md:gap-8">
         <div className="text-center">
           Demo Project Price To Give You Better Idea
         </div>
-        <div>Cost Calculate With AI</div>
-      </div>
+        
+      </div> */}
 
-      <div className="w-full max-w-[1280px] mt-20 grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <div className="w-full max-w-[1280px] mt-5 lg:mt-14 grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-40">
         {/* Left side: Icons and graph */}
         <div className="relative">
+        <div className="text-center text-white text-[18px] font-semibold px-5 md:px-0">
+          Demo Project Price To Give You Better Idea
+        </div>
           <PricingDisplay />
         </div>
 
         {/* Right side: Chat interface */}
-        <div className="w-full">
-          <div className="bg-[rgba(14,33,87,0.9)] rounded-xl p-6 w-full h-[540px] flex flex-col relative">
+        <div className="flex flex-col justify-center items-center w-full space-y-10">
+        <div className="text-center text-white text-[18px] font-semibold">Cost Calculate With AI</div>
+          <div className="bg-[rgba(14,33,87,0.9)] rounded-xl p-6 w-full h-[540px] md:w-[600px] lg:w-[400px] xl:w-[600px] flex flex-col relative">
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-2">
                 <div className="bg-[#050D36] rounded p-2">
