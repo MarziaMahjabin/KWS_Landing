@@ -1,10 +1,14 @@
-
 import React from "react";
 import ChatHeader from "./ChatHeader";
 import ChatNavigationBar from "./ChatNavigationBar";
+import { Agent } from "./ChatWidget";
 
-const AgentsList: React.FC = () => {
-  const agents = [
+interface AgentsListProps {
+  onSelectAgent: (agent: Agent) => void;
+}
+
+const AgentsList: React.FC<AgentsListProps> = ({ onSelectAgent }) => {
+  const agents: Agent[] = [
     {
       id: 1,
       name: "Cost Calculator Agent",
@@ -31,7 +35,7 @@ const AgentsList: React.FC = () => {
     <div className="chat-card flex flex-col h-full">
       <ChatHeader title="KWS" />
       
-      <div className="p-6 flex-grow">
+      <div className="p-6 flex-grow overflow-y-auto">
         <div className="text-center mb-8">
           <div className="flex justify-center items-center gap-2 text-[#BCBCBC] text-2xl font-semibold">
             <span>Hi Md</span>
@@ -46,10 +50,11 @@ const AgentsList: React.FC = () => {
           {agents.map(agent => (
             <div 
               key={agent.id} 
-              className="chat-agent-item transition-colors duration-200 rounded-lg p-3 flex items-center justify-between cursor-pointer"
+              className="chat-agent-item bg-[#172A46] hover:bg-[#21395F] transition-colors duration-200 rounded-lg p-3 flex items-center justify-between cursor-pointer"
+              onClick={() => onSelectAgent(agent)}
             >
               <div className="flex items-center gap-3">
-                <div className="chat-agent-icon p-3 rounded-lg">
+                <div className="chat-agent-icon bg-[#2D4872] p-3 rounded-lg">
                   <img
                     src={agent.icon}
                     alt={agent.name}

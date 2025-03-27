@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CostEstimator: React.FC = () => {
   return (
@@ -58,16 +59,18 @@ const CostEstimator: React.FC = () => {
                 </div>
               </div>
             </div>
-            <button className="bg-[rgba(145,59,255,1)] flex min-h-[63px] w-[209px] max-w-full items-center gap-[5px] text-2xl text-[rgba(249,249,249,1)] font-semibold justify-center mt-[50px] px-[11px] py-3 rounded-lg max-md:mt-10">
-              <div className="self-stretch flex items-center gap-[5px] my-auto">
-                <div className="self-stretch my-auto">get started</div>
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/96274e7fa2681cc132660728117e1a7b9eea5b33?placeholderIfAbsent=true"
-                  alt="Arrow"
-                  className="aspect-[1] object-contain w-[39px] self-stretch shrink-0 my-auto"
-                />
-              </div>
-            </button>
+            <Link to="/cost-calculator/form" className="inline-block">
+              <button className="bg-[rgba(145,59,255,1)] flex min-h-[63px] w-[209px] max-w-full items-center gap-[5px] text-2xl text-[rgba(249,249,249,1)] font-semibold justify-center mt-[50px] px-[11px] py-3 rounded-lg max-md:mt-10">
+                <div className="self-stretch flex items-center gap-[5px] my-auto">
+                  <div className="self-stretch my-auto">get started</div>
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/96274e7fa2681cc132660728117e1a7b9eea5b33?placeholderIfAbsent=true"
+                    alt="Arrow"
+                    className="aspect-[1] object-contain w-[39px] self-stretch shrink-0 my-auto"
+                  />
+                </div>
+              </button>
+            </Link>
           </div>
         </div>
         <div className="w-[43%] ml-5 max-md:w-full max-md:ml-0">

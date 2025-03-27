@@ -12,11 +12,14 @@ const contact : React.FC = () => {
        <div className="p-3 md:p-5 lg:p-8">
        <Navbar />
        </div>
+
+    <div className="bg-[rgba(5,13,54,1)] flex flex-col overflow-hidden items-stretch">
       <HeroSection />
       <ContactForm />
       <AppointmentSection />
       <CallToAction />
       <Footer />
+    </div>
     </div>
   );
 };

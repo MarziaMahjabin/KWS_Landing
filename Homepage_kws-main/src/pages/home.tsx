@@ -8,7 +8,7 @@ import Services from "@/components/home/Services";
 import FeaturedWork from "@/components/home/FeaturedWork";
 import ProjectCalculator from "@/components/home/ProjectCalculator";
 import Contact from "@/components/home/Contact";
-import Footer from "@/components/home/Footer";
+import Footer from "@/components/layout/Footer";
 
 const Index: React.FC = () => {
   return (

@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import Clash Display from CDN */
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@400,700,500,600&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 
 @font-face {
@@ -110,6 +113,7 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Clash Display', sans-serif;
   }
 }
 
@@ -117,4 +121,47 @@
   .bg-gradient-radial {
     background-image: radial-gradient(var(--tw-gradient-stops));
   }
+}
+
+/* Chat Widget Styling */
+.chat-card {
+  background-color: #0A1829;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+.chat-header {
+  background-color: #0F2136;
+}
+
+.chat-bottom-nav {
+  background-color: #0F2136;
+}
+
+.chat-agent-icon {
+  background-color: #2D4872;
+}
+
+.chat-agent-item {
+  background-color: #172A46;
+  transition: background-color 0.2s ease;
+}
+
+.chat-agent-item:hover {
+  background-color: #21395F;
+}
+
+.chat-message-bot {
+  background-color: #172A46;
+}
+
+.chat-message-user {
+  background-color: #2D4872;
+}
+
+.chat-input-bg {
+  background-color: #172A46;
+}
+
+.chat-send-button {
+  background-color: #3B82F6;
 }

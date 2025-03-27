@@ -7,7 +7,7 @@ import { ContactCTA } from "@/components/sections/ContactCTA";
 
 const AboutUsPage = () => {
   return (
-    <div className="bg-[rgba(5,13,54,1)] flex flex-col overflow-hidden items-stretch pb-[463px] max-md:pb-[100px]">
+    <div className="bg-[rgba(5,13,54,1)] flex flex-col overflow-hidden items-stretch">
       <div className="flex flex-col relative min-h-[628px] w-full pt-[45px] pb-[130px] px-[54px] max-md:max-w-full max-md:pb-[100px] max-md:px-5">
         <img
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/165aac82c429e58a36ed2d7b03bc14f8b154fa75?placeholderIfAbsent=true"
