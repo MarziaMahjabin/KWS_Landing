@@ -14,6 +14,7 @@ import CostCalculatorForm from "./pages/costcalculator_form";
 import CostEstimateFinal from "./pages/cost_estimate_final";
 import NotFound from "./pages/NotFound";
 import AboutUsPage from "./pages/about_us";
+import ChatWidget from "./components/chat/ChatWidget";
 
 const queryClient = new QueryClient();
 
@@ -37,6 +38,7 @@ const App = () => (
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <ChatWidget />
         </BrowserRouter>
       </CostCalculatorProvider>
     </TooltipProvider>

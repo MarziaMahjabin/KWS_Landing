@@ -1,0 +1,12 @@
+[1mdiff --git a/Homepage_kws-main/tailwind.config.ts b/Homepage_kws-main/tailwind.config.ts[m
+[1mindex 717eb0d..a538c73 100644[m
+[1m--- a/Homepage_kws-main/tailwind.config.ts[m
+[1m+++ b/Homepage_kws-main/tailwind.config.ts[m
+[36m@@ -19,6 +19,7 @@[m [mexport default {[m
+ 		},[m
+ 		extend: {[m
+ 			fontFamily: {[m
+[32m+[m				[32msans: ['Clash Display', 'sans-serif'],[m
+ 				dotted: ['Dotsalfn', 'sans-serif'],[m
+ 			},[m
+ 			colors: {[m
