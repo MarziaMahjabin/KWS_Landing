@@ -13,7 +13,7 @@ const CostCalculator = () => {
       <SoftwareCards />
       <CostEstimator />
       <ProjectCalculator />
-      <ChatInterface />
+      {/* <ChatInterface /> */}
 
       {/* Extras tooltip */}
       <div className="bg-[rgba(1,57,160,0.54)] z-10 flex min-h-[51px] w-[103px] max-w-full flex-col items-stretch text-[10px] text-white font-normal leading-none justify-center mr-[85px] -mt-7 px-1 py-[11px] rounded-[3px] border-[rgba(255,255,255,0.39)] max-md:mr-2.5">

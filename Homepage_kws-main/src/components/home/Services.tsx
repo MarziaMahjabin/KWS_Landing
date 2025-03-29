@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 
 const Services: React.FC = () => {
@@ -149,7 +150,7 @@ const Services: React.FC = () => {
             ))
           ) : (
             // Detailed view when a service is selected
-            <div className=" lg:col-span-3 flex flex-col md:flex-row gap-6 transition-all duration-500 ease-in-out">
+            <div className=" md:col-span-3 flex flex-col md:flex-row gap-6 transition-all duration-500 ease-in-out">
               {/* Selected service card on the left */}
               <div 
                 className="w-full md:w-1/3 bg-[rgba(145,59,255,1)] border border-[rgba(145,59,255,1)] rounded-md p-6 cursor-pointer"

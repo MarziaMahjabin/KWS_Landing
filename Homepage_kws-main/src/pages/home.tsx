@@ -23,7 +23,7 @@ const Index: React.FC = () => {
         </div>
       </div>
       {/* pl-7 max-md:max-w-full max-md:mt-10 max-md:pl-5 */}
-      <div className="flex w-full flex-col items-center md:mt-[132px]">
+      <div className="flex w-full flex-col items-center pb-10 md:pb-14">
         <Services />
         <FeaturedWork />
         <ProjectCalculator />
